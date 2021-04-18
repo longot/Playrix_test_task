@@ -1,0 +1,40 @@
+{
+  "parser": "@babel/eslint-parser",
+  "extends": [
+    "eslint:recommended",
+    "airbnb/base"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": false,
+    "es6": true
+  },
+  "rules": {
+    "semi": ["error", "never"],
+    "linebreak-style": ["error", "windows"],
+    "object-curly-spacing": ["error", "never"],
+    "operator-linebreak": ["error", "after"],
+    "max-len": ["error", {
+      "code": 180
+    }],
+    "no-multi-assign": "error",
+    "no-unused-vars": "error",
+    "global-require": 0
+  },
+  "globals": {
+    "PIXI": false,
+    "require": false
+  },
+  "settings": {
+    "import/core-modules": ["PIXI", "pixi", "pixi.js"],
+    "import/resolver": {
+      "alias": [
+        ["assets", "./assets"]
+      ]
+    }
+  }
+}
