@@ -140,6 +140,7 @@ export default {
       x: 400,
       y: 70,
       visible: false,
+      container: 'UI',
     }, {
       key: 'Logo',
       url: require('assets/logo.png'),
